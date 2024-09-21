@@ -1,0 +1,15 @@
+<body>
+  <div class="login-container">
+    <h3 style="color:#547adb;margin-left: 66px;">PRATHIK'S CLINIC</h3>
+      <form class="login-form" (ngSubmit)="login()">
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)]="user.UserName" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="user.Password" name="password" required>
+        
+        
+        <button type="submit">Login</button>
+      </form>
+    </div>
+</body>

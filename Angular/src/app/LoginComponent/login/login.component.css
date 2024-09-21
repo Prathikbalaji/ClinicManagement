@@ -1,0 +1,78 @@
+/* Basic styling for the login form */
+
+body{
+  background-image: url('/public/login-bg.jpg');
+  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .login-container {
+      margin-bottom: 20%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .login-form label {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #416ddf;;
+    }
+    
+    .login-form input {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .login-form input:focus {
+      outline: none;
+      border-color: #66b3ff; /* Highlight sky blue */
+      box-shadow: 0 0 5px rgba(102, 179, 255, 0.5);
+    }
+    
+    button {
+      background-color: #8aa0d8; /* Sky blue button */
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #7796e6; /* Darker sky blue on hover */
+    }
+    
+    button:active {
+      background-color: #547adb; /* Even darker on click */
+    }
+    
+    @media (max-width: 600px) {
+      .login-container {
+        padding: 20px;
+      }
+    
+      .login-form input, 
+      button {
+        font-size: 14px;
+      }
+    }

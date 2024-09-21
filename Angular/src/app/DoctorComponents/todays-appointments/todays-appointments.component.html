@@ -1,0 +1,51 @@
+<app-doctor-header></app-doctor-header>
+<div class="appointment-list-container">
+    <h2>Appointments</h2>
+  
+    <table class="appointments-table" *ngIf="appointments.length > 0; else noAppointments">
+      <thead>
+        <tr>
+          <th>Patient Name</th>
+          <th>Age</th>
+          <th>Appointment Date</th>
+          <th>Reason for Visit</th>
+          <th>Review</th>
+          <th>Cancel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{ appointment.patientName }}</td>
+          <td>{{ appointment.age }}</td>
+          <td>{{ appointment.appointmentDate | date: 'MMM d, y' }}</td> <!-- Format the date -->
+          <td>{{ appointment.reasonForVisit }}</td>
+          <td>
+            <button *ngIf="appointment.appointmentStatus != 'Completed'" 
+                    class="btn btn-primary" 
+                    (click)="AddReview(appointment.appointmentId)">
+              Review
+            </button>
+            <span *ngIf="appointment.appointmentStatus === 'Completed'">Finished Review</span>
+          </td> 
+          <td>
+            <button *ngIf="appointment.appointmentStatus != 'Completed'" 
+                    class="btn" style="background-color: rgb(248, 59, 59);"
+                    (click)="CancelApp(appointment.appointmentId)">
+              Cancel
+            </button>
+            <button *ngIf="appointment.appointmentStatus == 'Completed' " 
+                    class="btn" style="background-color: rgb(248, 59, 59);"
+                    [disabled] = true >
+              Cancel
+            </button>
+          </td>      
+         </tr>
+      </tbody>
+    </table>
+  
+    <!-- No Appointments message -->
+    <ng-template #noAppointments>
+      <p>No appointments found.</p>
+    </ng-template>
+  </div>
+  

@@ -1,0 +1,48 @@
+<app-receptionist-header></app-receptionist-header>
+<div class="container mt-4">
+  <!-- Appointments Table -->
+  <table *ngIf="appointments.length > 0" class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Patient Name</th>
+        <th>Age</th>
+        <th>Date</th>
+        <th>Reason</th>
+        <th>Appointment Status</th>
+        <th>Cancel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Slice appointments based on the current page -->
+      <tr *ngFor="let appnt of appointments | slice:(currentPage-1) * pageSize:(currentPage * pageSize)">
+        <td>{{ appnt.patientName }}</td>
+        <td>{{ appnt.age }}</td>
+        <td>{{ extractDateFromISO(appnt.appointmentDate) }}</td>
+        <td>{{ appnt.reasonForVisit }}</td>
+        <td>{{ appnt.appointmentStatus }}</td>
+        <td>
+          <button [disabled]="appnt.appointmentStatus === 'Missed to Review' || appnt.appointmentStatus === 'Reviewed'" 
+                  class="btn btn-danger" 
+                  (click)="cancelAppointment(appnt.appointmentId)">
+            Cancel
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Pagination Controls -->
+  <div *ngIf="appointments.length > pageSize" class="pagination-controls mt-3">
+    <button class="btn btn-primary" (click)="currentPage = currentPage - 1" [disabled]="currentPage === 1">
+      Previous
+    </button>
+    <span class="mx-2">Page {{ currentPage }}</span>
+    <button class="btn btn-primary" (click)="currentPage = currentPage + 1" [disabled]="currentPage === totalPages">
+      Next
+    </button>
+  </div>
+
+  <div *ngIf="appointments.length === 0" class="alert alert-info mt-3">
+    No patients found.
+  </div>
+</div>

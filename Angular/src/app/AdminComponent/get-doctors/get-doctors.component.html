@@ -1,0 +1,40 @@
+<app-admin-header></app-admin-header>
+
+<div class="doctor-list">
+    <h2>Doctors List</h2>
+  
+    <!-- Check if doctors array is not empty -->
+    <div *ngIf="doctors.length > 0; else noDoctors">
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor Name</th>
+            <th>Age</th>
+            <th>Specialization</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Consultant Fee</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Loop through doctors array and display doctor info -->
+          <tr *ngFor="let doctor of doctors">
+            <td data-label="Doctor Name">{{ doctor.doctorName }}</td>
+            <td data-label="Age">{{ doctor.age }}</td>
+            <td data-label="Specialization">{{ doctor.specialization }}</td>
+            <td data-label="Email">{{ doctor.email }}</td>
+            <td data-label="Phone Number">{{ doctor.phoneNumber }}</td>
+            <td data-label="Consultant Fee">{{ doctor.consultantFee | currency:'INR':'symbol' }}</td>
+            <td ><button class="btn btn-primary" (click) = 'editDoctor(doctor.doctorID)' >Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- If no doctors are found, display this message -->
+    <ng-template #noDoctors>
+      <p>No doctors available.</p>
+    </ng-template>
+  </div>
+  

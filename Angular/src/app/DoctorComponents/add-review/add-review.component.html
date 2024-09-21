@@ -1,0 +1,50 @@
+<app-doctor-header></app-doctor-header>
+
+<div class="appointment-list-container">
+    <h2>Patient Details</h2>
+  
+    <!-- Card Layout for Appointments -->
+    <div *ngIf="appointments.length > 0">
+      <div class="appointment-card" *ngFor="let appointment of appointments">
+        <div class="card-body">
+          <h5 class="card-title">{{ appointment.patientName }}</h5>
+  
+          <div class="card-info">
+            <label><strong>Age:</strong></label>
+            <span>{{ appointment.age }}</span>
+          </div>
+  
+          <div class="card-info">
+            <label><strong>Appointment Date:</strong></label>
+            <span>{{ appointment.appointmentDate | date: 'MMM d, y' }}</span>
+          </div>
+  
+          <div class="card-info">
+            <label><strong>Reason for Visit:</strong></label>
+            <span>{{ appointment.reasonForVisit }}</span>
+          </div>
+  
+          <div class="card-info">
+            <label><strong>View Test Record:</strong></label>
+            <button class="download-btn" [disabled]="base64Data == undefined" (click)="download()">
+              Download Test Record
+            </button>
+          </div>
+  
+          <div class="card-notes">
+            <label><strong>Add Medical Notes:</strong></label>
+            <textarea id="notes" name="notes" class="input-notes" #notes="ngModel" [(ngModel)]="Notes" placeholder="Enter Medical Notes" rows="3" required></textarea><br>
+            <div *ngIf="notes.invalid && notes.touched" class="text-danger small">
+                Medical Notes cannot be empty!
+            </div>
+          </div>
+          
+  
+          <div>
+            <button type="button" class="submit-btn" [disabled]="notes.invalid" (click)="save()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

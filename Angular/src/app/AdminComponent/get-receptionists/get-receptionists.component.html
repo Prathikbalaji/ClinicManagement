@@ -1,0 +1,30 @@
+<app-admin-header></app-admin-header>
+
+<div class="doctor-list">
+    <h2>Receptionists List</h2>
+  
+    <!-- Check if doctors array is not empty -->
+    <div *ngIf="recs.length > 0; else noDoctors">
+      <table>
+        <thead>
+          <tr>
+            <th>Receptionist Name</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Loop through doctors array and display doctor info -->
+          <tr *ngFor="let doctor of recs">
+            <td data-label="Receptionist Name">{{ doctor.receptionistName }}</td>
+            <td data-label="Phone Number">{{ doctor.phoneNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- If no doctors are found, display this message -->
+    <ng-template #noDoctors>
+      <p>No Receptionists available.</p>
+    </ng-template>
+  </div>
+  

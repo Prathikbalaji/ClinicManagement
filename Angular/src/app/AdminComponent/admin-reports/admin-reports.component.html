@@ -1,0 +1,93 @@
+<app-admin-header></app-admin-header>
+
+<div class="action-buttons">
+    <button class="btn" (click)="openDateFilter('appointments')">All Appointments</button>
+    <button class="btn" (click)="getTotalFee()">View Total Fees Collected</button>
+</div>
+
+<!-- Date Filter Section -->
+<div class="date-filter" *ngIf="showDateFilter">
+    <h3>Select Date Range</h3>
+
+    <!-- Date range buttons -->
+    <div class="date-range-buttons">
+        <button class="date-range-btn" [ngClass]="{'active': selectedRange === 'fromTo'}" (click)="setDateRange('fromTo')">From-To Date</button>
+        <button class="date-range-btn" [ngClass]="{'active': selectedRange === 'thisMonth'}" (click)="setDateRange('thisMonth')">This Month</button>
+        <button class="date-range-btn" [ngClass]="{'active': selectedRange === 'thisWeek'}" (click)="setDateRange('thisWeek')">This Week</button>
+    </div>
+
+    <!-- Show date pickers only for From-To option -->
+    <div *ngIf="selectedRange === 'fromTo'" class="date-pickers">
+        <label>From Date: <input type="date" [(ngModel)]="fromDate" class="date-input"/></label>
+        <label>To Date: <input type="date" [(ngModel)]="toDate" class="date-input"/></label>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="btn btn-submit" (click)="submitDateFilter()">Submit</button>
+        <button class="btn btn-cancel" (click)="cancelDateFilter()">Cancel</button>
+    </div>
+</div>
+
+<!-- Appointments Section -->
+<div class="table-container" *ngIf="showSection === 'appointments'">
+    <h3>Overall Appointments</h3>
+    <table class="styled-table" *ngIf="allappnts.length > 0; else noAppointments">
+        <thead>
+            <tr>
+                <th>Appointment ID</th>
+                <th>Appointment Date</th>
+                <th>Status</th>
+                <th>Reason for Visit</th>
+                <th>Patient Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Consultation Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of allappnts">
+                <td>{{ appointment.appointmentID }}</td>
+                <td>{{ appointment.appointmentDate | date: 'dd-MM-yyyy' }}</td>
+                <td>{{ appointment.appointmentStatus }}</td>
+                <td>{{ appointment.reasonForVisit }}</td>
+                <td>{{ appointment.patientName }}</td>
+                <td>{{ appointment.patientDOB | date: 'dd-MM-yyyy' }}</td>
+                <td>{{ appointment.patientGender }}</td>
+                <td>{{ appointment.doctorName }}</td>
+                <td>{{ appointment.doctorSpecialization }}</td>
+                <td>{{ appointment.doctorConsultationFee | currency :'INR':'symbol' }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Message for no appointments data -->
+    <ng-template #noAppointments>
+        <p class="no-data-message">No appointments found for the selected date range.</p>
+    </ng-template>
+</div>
+
+<!-- Fees Section -->
+<div class="table-container" *ngIf="showSection === 'fees'">
+    <h3>Total Fees Collected by Doctors</h3>
+    <table class="styled-table" *ngIf="totalFees.length > 0; else noFees">
+        <thead>
+            <tr>
+                <th>Doctor ID</th>
+                <th>Doctor Name</th>
+                <th>Total Fees Collected</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let fee of totalFees">
+                <td>{{ fee.doctorID }}</td>
+                <td>{{ fee.doctorName }}</td>
+                <td>{{ fee.totalFeesCollected | currency:'INR':'symbol' }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Message for no fees data -->
+    <ng-template #noFees>
+        <p class="no-data-message">No fees data found for the selected date range.</p>
+    </ng-template>
+</div>

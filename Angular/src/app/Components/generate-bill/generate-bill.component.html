@@ -1,0 +1,32 @@
+<app-receptionist-header></app-receptionist-header>
+
+<div class="container">
+    <h2>Generate Bill</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Patient Name</th>
+          <th>Age</th>
+          <th>Medical Notes</th>
+          <th>Appointment Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{ appointment.patientID }}</td>
+          <td>{{ appointment.patientName }}</td>
+          <td>{{ appointment.age }}</td>
+          <td>{{ appointment.medicalNotes }}</td>
+          <td>{{ appointment.appointmentDate | date: 'dd/MM/yyyy' }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="generateBill(appointment)">
+              Generate Bill
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

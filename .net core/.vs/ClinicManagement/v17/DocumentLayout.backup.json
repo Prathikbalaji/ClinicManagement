@@ -1,0 +1,396 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\repository\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\repository\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\repository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\repository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\service\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\interface\\idoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\interface\\idoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\interface\\ireceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\interface\\ireceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\service\\receptionistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\service\\receptionistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\doctoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\doctoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\migrations\\20240917043558_removepresvription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\migrations\\20240917043558_removepresvription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\migrations\\clinicmanagementdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\migrations\\clinicmanagementdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\clinicmanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\clinicmanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|c:\\users\\prathik.b\\source\\repos\\clinicmanagement\\clinicmanagement\\migrations\\20240916091031_testrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC52D9FA-52B3-473C-AED3-E0C791A44504}|ClinicManagement\\ClinicManagement.csproj|solutionrelative:clinicmanagement\\migrations\\20240916091031_testrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "ClinicManagement\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:10:08.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Service\\DoctorService.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Service\\DoctorService.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Service\\DoctorService.cs",
+              "RelativeToolTip": "ClinicManagement\\Service\\DoctorService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwDQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:16:49.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Repository\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Repository\\DoctorRepository.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Repository\\DoctorRepository.cs",
+              "RelativeToolTip": "ClinicManagement\\Repository\\DoctorRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T13:28:04.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Controllers\\AdminsController.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "ClinicManagement\\Controllers\\AdminsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAgwGcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T15:26:44.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReceptionistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Repository\\ReceptionistRepository.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Repository\\ReceptionistRepository.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Repository\\ReceptionistRepository.cs",
+              "RelativeToolTip": "ClinicManagement\\Repository\\ReceptionistRepository.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAQwH8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:00:26.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ClinicManagement\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAwwDwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T05:33:48.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReceptionistController.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\ReceptionistController.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Controllers\\ReceptionistController.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Controllers\\ReceptionistController.cs",
+              "RelativeToolTip": "ClinicManagement\\Controllers\\ReceptionistController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAA1wDcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:17:22.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDoctor.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Interface\\IDoctor.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Interface\\IDoctor.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Interface\\IDoctor.cs",
+              "RelativeToolTip": "ClinicManagement\\Interface\\IDoctor.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwDgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:10:11.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Appointment.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Appointment.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\Appointment.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:58:40.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReceptionistService.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Service\\ReceptionistService.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Service\\ReceptionistService.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Service\\ReceptionistService.cs",
+              "RelativeToolTip": "ClinicManagement\\Service\\ReceptionistService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:58:04.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReceptionist.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Interface\\IReceptionist.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Interface\\IReceptionist.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Interface\\IReceptionist.cs",
+              "RelativeToolTip": "ClinicManagement\\Interface\\IReceptionist.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:57:28.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Billing.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Billing.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\Billing.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Billing.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\Billing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T09:08:51.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Doctor.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\Doctor.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Doctor.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\Doctor.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T08:57:36.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\User.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\User.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T09:42:07.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Patient.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\Patient.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Patient.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\Patient.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T17:59:30.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\MedicalRecord.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\MedicalRecord.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\MedicalRecord.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T05:29:11.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Admin.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\Admin.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\Admin.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:35:09.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ClinicManagementDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\ClinicManagementDBContext.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\ClinicManagementDBContext.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\ClinicManagementDBContext.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\ClinicManagementDBContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:35:20.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorAvailability.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\DoctorAvailability.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Model\\DoctorAvailability.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Model\\DoctorAvailability.cs",
+              "RelativeToolTip": "ClinicManagement\\Model\\DoctorAvailability.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:35:42.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240917043558_removePresvription.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\20240917043558_removePresvription.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Migrations\\20240917043558_removePresvription.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\20240917043558_removePresvription.cs",
+              "RelativeToolTip": "ClinicManagement\\Migrations\\20240917043558_removePresvription.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAowEwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:36:00.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "ClinicManagement\\appsettings.json",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\appsettings.json",
+              "RelativeToolTip": "ClinicManagement\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T13:43:41.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClinicManagementDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\ClinicManagementDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Migrations\\ClinicManagementDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\ClinicManagementDBContextModelSnapshot.cs",
+              "RelativeToolTip": "ClinicManagement\\Migrations\\ClinicManagementDBContextModelSnapshot.cs",
+              "ViewState": "AgIAAOMBAAAAAAAAAAAAALgBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T09:12:36.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240916091031_TestRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\20240916091031_TestRecord.cs",
+              "RelativeDocumentMoniker": "ClinicManagement\\Migrations\\20240916091031_TestRecord.cs",
+              "ToolTip": "C:\\Users\\Prathik.b\\Source\\Repos\\ClinicManagement\\ClinicManagement\\Migrations\\20240916091031_TestRecord.cs",
+              "RelativeToolTip": "ClinicManagement\\Migrations\\20240916091031_TestRecord.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T09:10:31.942Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

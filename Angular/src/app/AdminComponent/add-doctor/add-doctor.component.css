@@ -1,0 +1,106 @@
+/* Form Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3, h5 {
+    color: #000000; /* Dodger Blue */
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #000000;
+    font-weight: bold;
+}
+
+input, select {
+    border: 1px solid #1e90ff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus, select:focus {
+    border-color: #00bfff; /* Deep Sky Blue */
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #1e90ff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00bfff;
+}
+
+button:disabled {
+    background-color: #add8e6; /* Light blue for disabled state */
+    cursor: not-allowed;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .col-md-6 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    input, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}

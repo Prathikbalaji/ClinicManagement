@@ -1,0 +1,66 @@
+<app-admin-header></app-admin-header>
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Register New Receptionist</h3>
+    <form #addRec="ngForm" (ngSubmit)="onSubmit(addRec)" class="form-group row g-3">
+
+        <!-- User Section -->
+        <div class="col-12">
+            <h5>User Information</h5>
+        </div>
+
+        <div class="col-md-6">
+            <label for="userName" class="form-label">Username</label>
+            <input type="text" id="userName" name="userName" class="form-control" #userName="ngModel" [(ngModel)]="rec.userName" placeholder="Enter Username" required>
+            <div *ngIf="userName.invalid && userName.touched" class="text-danger small">
+                Username is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control" #password="ngModel" [(ngModel)]="rec.password" placeholder="Enter Password" required>
+            <div *ngIf="password.invalid && password.touched" class="text-danger small">
+                Password is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="roleID" class="form-label">Role ID</label>
+            <select id="roleID" name="roleID" class="form-select" #roleID="ngModel" [(ngModel)]="rec.roleID" required>
+                <option value="" disabled>Select Role</option>
+                <option value="1">Admin</option>
+                <option value="2">Doctor</option>
+                <option value="3">Receptionist</option>
+            </select>
+            <div *ngIf="roleID.invalid && roleID.touched" class="text-danger small">
+                Role ID is required.
+            </div>
+        </div>
+
+        <!-- Doctor Section -->
+        <div class="col-12 mt-4">
+            <h5>Receptionist Information</h5>
+        </div>
+
+        <div class="col-md-6">
+            <label for="doctorName" class="form-label">Receptionist Name</label>
+            <input type="text" id="doctorName" name="doctorName" class="form-control" #doctorName="ngModel" [(ngModel)]="rec.recName" placeholder="Enter Doctor's Name" required>
+            <div *ngIf="doctorName.invalid && doctorName.touched" class="text-danger small">
+                Receptionist's name is required.
+            </div>
+        </div>  
+
+        <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" #phoneNumber="ngModel" [(ngModel)]="rec.phoneNumber" placeholder="Enter Phone Number" required>
+            <div *ngIf="phoneNumber.invalid && phoneNumber.touched" class="text-danger small">
+                Phone number must be valid.
+            </div>
+        </div>
+
+        <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn btn-primary px-5" [disabled]="addRec.invalid">Add Receptionist</button>
+        </div>
+    </form>
+</div>

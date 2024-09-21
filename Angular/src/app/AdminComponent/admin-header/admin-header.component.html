@@ -1,0 +1,33 @@
+<header>
+    <nav class="navbar">
+      <div class="container">
+        <!-- Left: App Name and Links -->
+        <div class="left-section">
+            <img src="/public/cfinal.png" style="width: 50px;">
+          <a class="navbar-brand" href="/">Prathik's Clinic</a>
+          <ul class="navbar-links">
+            <li (click)="viewdocs()">View Doctors</li>
+          </ul>
+          <ul class="navbar-links">
+            <li (click)="viewrecs()">View Receptionists</li>
+          </ul>
+          <ul class="navbar-links">
+            <li (click)="createdoc()">Create Doctor</li>
+          </ul>
+          <ul class="navbar-links">
+            <li (click)="createrec()">Create Receptionist</li>
+          </ul>
+          <ul class="navbar-links">
+            <li (click)="getReports()">Reports</li>
+          </ul>
+        </div>
+  
+        <!-- Right: Username and Logout -->
+        <div class="right-section">
+          <span class="username">{{UName}}!</span>
+          <a (click)="logout()" class="logout-btn">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  

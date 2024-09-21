@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/path/to/skyblue-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  /* Container for content */
+  .container {
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  button.btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 9px;
+    transition: background 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  
+  /* Search Input Styling */
+  input[type="text"] {
+    width: 18%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #0056b3;
+  }
+  
+  /* Table Styling */
+  table.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 7px;
+  }
+  
+  table.table th {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  table.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Edit and Delete Buttons */
+  button.btn-warning, button.btn-danger {
+  
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 9px;
+    transition: background 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  button.btn-warning {
+    background-color: #ffc107;
+    border: none;
+  }
+  
+  button.btn-danger {
+    background-color: #f3374a;
+    border: none;
+  }
+  
+  /* Alert for no patients */
+  .alert-info {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

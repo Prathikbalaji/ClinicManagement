@@ -1,0 +1,39 @@
+/* Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    border: 1px solid #007bff; /* Blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Blue theme for the title */
+    margin-bottom: 15px;
+}
+
+/* Card Text Styling */
+.card-text {
+    font-size: 16px;
+    color: #333; /* Dark grey for the content text */
+    margin-bottom: 10px;
+}
+
+/* Bold Labels */
+.card-text strong {
+    color: #0056b3; /* Darker blue for labels */
+    font-weight: bold;
+}
+
+/* Spacing between text fields */
+.card-text + .card-text {
+    margin-top: 10px; /* Adds spacing between the lines of text */
+}

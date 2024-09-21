@@ -1,0 +1,113 @@
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for the days of the week */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows for the maximum number of weeks in a month */
+    gap: 10px;
+    padding: 20px;
+    max-width: 665px; /* Set a maximum width for the calendar */
+    margin: 0 auto; /* Center the calendar horizontally */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #007bff; /* You can change this to fit your theme */
+    color: white;
+    border-radius: 5px;
+    height: 51px;
+    margin-top: 28px;
+  }
+  
+  .day-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    height: 80px; /* Fixed height for each day cell */
+    width: 80px; /* Fixed width for each day cell */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width/height */
+  }
+  
+  .day-cell:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .current-month {
+    color: #333;
+  }
+  
+
+  
+  .availability-tag {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+  }
+  
+  .availability-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .availability-modal h3 {
+    margin-top: 0;
+  }
+  
+  .availability-modal label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .availability-modal input {
+    margin-right: 10px;
+  }
+  
+  .availability-modal button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .disabled-day {
+    color: #ccc; /* Gray out past dates */
+    pointer-events: none; /* Prevent clicking */
+  }
+
+  .close-button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  

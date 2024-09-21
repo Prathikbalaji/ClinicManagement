@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('/public/bgclinic.webp'); /* Path to your local image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans';
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

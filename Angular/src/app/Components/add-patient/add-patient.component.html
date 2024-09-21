@@ -1,0 +1,75 @@
+<app-receptionist-header></app-receptionist-header>
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Create New Patient</h3>
+    <form #addPatient="ngForm" (ngSubmit)="onSubmit()" class="form-group row g-3">
+        <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" #firstname="ngModel" [(ngModel)]="patient.firstName" placeholder="Enter First Name" required>
+            <div *ngIf="firstname.invalid && firstname.touched" class="text-danger small">
+                First name is required.
+            </div>
+        </div>
+  
+        <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" #lastName="ngModel" [(ngModel)]="patient.lastName" placeholder="Enter Last Name" required>
+            <div *ngIf="lastName.invalid && lastName.touched" class="text-danger small">
+                Last name is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" #dob="ngModel" [(ngModel)]="patient.dateOfBirth" required>
+            <div *ngIf="dob.invalid && dob.touched" class="text-danger small">
+                Date of Birth is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="gender" class="form-label">Gender</label>
+            <select id="gender" name="gender" class="form-select" #gender="ngModel" [(ngModel)]="patient.gender" required>
+                <option value="" disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <div *ngIf="gender.invalid && gender.touched" class="text-danger small">
+                Gender is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" #pn="ngModel" [(ngModel)]="patient.phoneNumber" placeholder="Enter Phone Number" pattern="^[0-9]{10}$" required>
+            <div *ngIf="pn.invalid && pn.touched" class="text-danger small">
+                Phone number must be 10 digits.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="patient.email" placeholder="Enter Email" required>
+            <div *ngIf="email.invalid && email.touched" class="text-danger small">
+                Please enter a valid email.
+            </div>
+        </div>
+
+        <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <textarea id="address" name="address" class="form-control" #address="ngModel" [(ngModel)]="patient.address" placeholder="Enter Address" rows="3" required></textarea>
+            <div *ngIf="address.invalid && address.touched" class="text-danger small">
+                Address is required.
+            </div>
+        </div>
+
+        <div *ngIf="errorMessage" style="color: red; background-color: #fdd; border: 1px solid red; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold;">
+            {{ errorMessage }}
+        </div>   
+
+        <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn btn-primary px-5" [disabled]="addPatient.invalid">Add Patient</button>
+        </div>
+    </form>
+</div>
+
+

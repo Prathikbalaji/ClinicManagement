@@ -1,0 +1,55 @@
+.mat-dialog-container {
+    background-color: #fefefe; /* Light background for dialog */
+    border-radius: 5px; /* Smooth rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deep shadow for depth */
+    padding: 20px;
+    width : 125%;
+    max-width: 450px; /* Control the size of the dialog */
+  }
+  
+  h1[mat-dialog-title] {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50; /* Darker color for heading */
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #007bff; /* Accent border */
+    padding-bottom: 10px;
+  }
+  
+  div[mat-dialog-content] p {
+    color: #34495e; /* Slightly darker text for better readability */
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  div[mat-dialog-actions] {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button[mat-button] {
+    background-color: #28a745; /* Success green button */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    text-transform: none; /* Keep button text in normal case */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.3s ease;
+  }
+  
+  button[mat-button]:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  button[mat-button]:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(72, 180, 97, 0.5); /* Green focus outline */
+  }
+  

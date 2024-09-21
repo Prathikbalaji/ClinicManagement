@@ -1,0 +1,34 @@
+<app-doctor-header></app-doctor-header>
+
+<h2 style="color:blue;text-align: center; margin-top: 20px;">{{currentMonthName}}</h2>
+
+
+<div class="calendar-container">
+    <div class="day-header" *ngFor="let day of daysOfWeek">{{ day }}</div>
+  
+    <!-- Generate calendar days dynamically -->
+    <div class="day-cell"
+     *ngFor="let day of calendarDays; let i = index"
+     [ngClass]="{
+       'current-month': day.isCurrentMonth, 
+       'selected-day': day.isSelected,
+       'disabled-day': day.isPast
+     }"
+     (click)="selectDay(day)">
+  {{ day.date ? day.date.getDate() : '' }}
+  <div *ngIf="day.availability" class="availability-tag">Available</div>
+</div>
+
+  
+  <!-- Modal for setting availability (can be inline if you prefer) -->
+  <div *ngIf="selectedDay" class="availability-modal">
+    <h3>Update Availability for {{ selectedDay.date | date: 'fullDate' }}</h3>
+    
+    <label>
+        <input type="checkbox" [(ngModel)]="selectedDay.availability"> Available
+      </label>      
+    
+    <button (click)="saveAvailability()">Save</button>
+    <button (click)="closeModal()" class="close-button">Close</button>
+  </div>
+  

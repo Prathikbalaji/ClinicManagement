@@ -1,0 +1,80 @@
+<app-receptionist-header></app-receptionist-header>
+<div class="container mt-4">
+    <h3>Select a Patient</h3>
+    <form #patientForm="ngForm" class="form-group" (ngSubmit)="saveAppointment()">
+        <div class="row">
+            <!-- First Row (Patient Name and Specialization) -->
+            <div class="col-md-6 mb-3">
+                <label for="patientSelect" class="form-label">Patient Name</label>
+                <select id="patientSelect" name="patientSelect" class="form-control" #patientSelect = "ngModel" [(ngModel)]="selectedPatient" required>
+                    <option value="0">Select a patient</option> <!-- Default option -->
+                    <option *ngFor="let patient of patients" [value]="patient.patientID">
+                        {{ patient.firstName }} {{ patient.lastName }}
+                    </option>
+                </select>
+                <div *ngIf="(patientSelect.invalid || selectedPatient === 0) && patientSelect.touched" class="text-danger small">
+                    Patient is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="specialization" class="form-label">Specialization</label>
+                <select id="specialization" name="specialization" class="form-control" #specialization="ngModel" [(ngModel)]="Spec" (change)="onSpecializationChange(Spec)" required>
+                    <option value="">Select specialization</option> <!-- Default option -->
+                    <option *ngFor="let specl of Specialization" [value]="specl">
+                        {{ specl }}
+                    </option>
+                </select>
+                <div *ngIf="(specialization.invalid || Spec === '') && specialization.touched" class="text-danger small">
+                    Specialization is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Second Row (Doctor and Available Dates) -->
+            <div class="col-md-6 mb-3">
+                <label for="doctor" class="form-label">Doctor</label>
+                <select id="doctor" name="doctor" class="form-control" #doct="ngModel" [(ngModel)]="DocID" (change)="OnDoctorChanges(DocID)" required>
+                    <option value="0">Select a doctor</option> <!-- Default option -->
+                    <option *ngFor="let docs of doctor" [value]="docs.doctorID">
+                        {{ docs.doctorName }}
+                    </option>
+                </select>
+                <div *ngIf="(doct.invalid || DocID === 0) && doct.touched" class="text-danger small">
+                    Doctor is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="dates" class="form-label">Available Dates</label>
+                <select id="dates" name="dates" class="form-control" #dates = "ngModel" [(ngModel)]="SelectedDate" required>
+                    <option value="">Select an available date</option> <!-- Default option -->
+                    <option *ngFor="let dts of AvailDates" [value]="dts">
+                        {{ dts }}
+                    </option>
+                </select>
+                <div *ngIf="(dates.invalid || SelectedDate === '') && dates.touched" class="text-danger small">
+                    Date is required.
+                </div>
+            </div>
+        </div>
+
+        <!-- Reason for Visit -->
+        <div class="col-12">
+            <label for="reason" class="form-label">Reason for Visit</label>
+            <textarea id="reason" name="reason" class="form-control" #reason="ngModel" [(ngModel)]="Reason" placeholder="Enter Reason for Visit" rows="3" required></textarea>
+            <div *ngIf="reason.invalid && reason.touched" class="text-danger small">
+                Reason is required.
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <label for="testRecord" class="form-label">Upload Test Record (Optional)</label>
+            <input type="file" id="testRecord" name="testRecord" class="form-control" (change)="onFileSelected($event)">
+        </div> 
+        <div *ngIf="errorMessage" style="color: red; background-color: #fdd; border: 1px solid red; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold;">
+            {{ errorMessage }}
+        </div>        
+        <p style="text-align: center;">
+            <button id="btnSubmit" [disabled]="patientForm.invalid" type="submit" >Submit</button>
+        </p>    
+        </form>
+</div>

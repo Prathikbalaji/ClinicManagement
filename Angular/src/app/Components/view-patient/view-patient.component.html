@@ -1,0 +1,13 @@
+<app-receptionist-header></app-receptionist-header>
+<div *ngIf="patient?.patientID" class="card">
+    <div class="card-body">
+        <h5 class="card-title">Patient Details</h5>
+        <p class="card-text"><strong>Name  : </strong> {{ patient.firstName }} {{ patient.lastName }} </p>
+        <p class="card-text"><strong>DOB : </strong> {{ patient.dateOfBirth | date: 'dd MMM yyyy' }}</p>
+        <p class="card-text"><strong>Gender : </strong> {{ patient.gender }}</p>
+        <p class="card-text"><strong>PhoneNumber : </strong> {{ patient.phoneNumber }}</p>
+        <p class="card-text"><strong>Email : </strong> {{ patient.email }}</p>
+        <p class="card-text"><strong>Address : </strong> {{ patient.address }}</p>
+    </div>
+</div>
+

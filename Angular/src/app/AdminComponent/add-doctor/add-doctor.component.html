@@ -1,0 +1,102 @@
+<app-admin-header></app-admin-header>
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Register New Doctor</h3>
+    <form #addDoctor="ngForm" (ngSubmit)="onSubmit(addDoctor)" class="form-group row g-3">
+
+        <!-- User Section -->
+        <div class="col-12">
+            <h5>User Information</h5>
+        </div>
+
+        <div class="col-md-6">
+            <label for="userName" class="form-label">Username</label>
+            <input type="text" id="userName" name="userName" class="form-control" #userName="ngModel" [(ngModel)]="doctor.userName" placeholder="Enter Username" required>
+            <div *ngIf="userName.invalid && userName.touched" class="text-danger small">
+                Username is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-control" #password="ngModel" [(ngModel)]="doctor.password" placeholder="Enter Password" required>
+            <div *ngIf="password.invalid && password.touched" class="text-danger small">
+                Password is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="roleID" class="form-label">Role ID</label>
+            <select id="roleID" name="roleID" class="form-select" #roleID="ngModel" [(ngModel)]="doctor.roleID" required>
+                <option value="" disabled>Select Role</option>
+                <option value="1">Admin</option>
+                <option value="2">Doctor</option>
+                <option value="3">Receptionist</option>
+            </select>
+            <div *ngIf="roleID.invalid && roleID.touched" class="text-danger small">
+                Role ID is required.
+            </div>
+        </div>
+
+        <!-- Doctor Section -->
+        <div class="col-12 mt-4">
+            <h5>Doctor Information</h5>
+        </div>
+
+        <div class="col-md-6">
+            <label for="doctorName" class="form-label">Doctor Name</label>
+            <input type="text" id="doctorName" name="doctorName" class="form-control" #doctorName="ngModel" [(ngModel)]="doctor.doctorName" placeholder="Enter Doctor's Name" required>
+            <div *ngIf="doctorName.invalid && doctorName.touched" class="text-danger small">
+                Doctor's name is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" id="age" name="age" class="form-control" #age="ngModel" [(ngModel)]="doctor.age" placeholder="Enter Age" required>
+            <div *ngIf="age.invalid && age.touched" class="text-danger small">
+                Age is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="specialization" class="form-label">Specialization</label>
+            <input type="text" id="specialization" name="specialization" class="form-control" #specialization="ngModel" [(ngModel)]="doctor.specialization" placeholder="Enter Specialization" required>
+            <div *ngIf="specialization.invalid && specialization.touched" class="text-danger small">
+                Specialization is required.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="doctor.email" placeholder="Enter Email" required>
+            <div *ngIf="email.invalid && email.touched" class="text-danger small">
+                Please enter a valid email.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" #phoneNumber="ngModel" [(ngModel)]="doctor.phoneNumber" placeholder="Enter Phone Number" required pattern="^[6-9]\d{9}$" maxlength="10">
+            <div *ngIf="phoneNumber.invalid && phoneNumber.touched" class="text-danger small">
+                Phone number must be a valid 10-digit number starting with 6, 7, 8, or 9.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="cfee" class="form-label">Consultant Fee</label>
+            <input type="text" id="cfee" name="cfee" class="form-control" #cfee="ngModel" [(ngModel)]="doctor.consultantFee" placeholder="Enter Consultant Fee" required>
+            <div *ngIf="cfee.invalid && cfee.touched" class="text-danger small">
+                Consultant Fee is required.
+            </div>
+        </div>
+
+        <div *ngIf="errorMessage" style="color: red; background-color: #fdd; border: 1px solid red; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold;">
+            {{ errorMessage }}
+        </div>   
+
+        <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn btn-primary px-5" [disabled]="addDoctor.invalid">Add Doctor</button>
+        </div>
+    </form>
+</div>
